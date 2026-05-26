@@ -1,0 +1,618 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B59D4DF4-6ABE-4302-A413-CB5789D73D48}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Assign_001</RootNamespace>
+    <AssemblyName>Assign_001</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Addcart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addcart.Designer.cs">
+      <DependentUpon>Addcart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bill.Designer.cs">
+      <DependentUpon>Bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BillPreviewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillPreviewForm.Designer.cs">
+      <DependentUpon>BillPreviewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BillReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BillReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MemsReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MemsReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OrdReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrdReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="oreader_dbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>oreader_dbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Regist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Regist.Designer.cs">
+      <DependentUpon>Regist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cont_open.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cont_open.Designer.cs">
+      <DependentUpon>Cont_open.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adv.Designer.cs">
+      <DependentUpon>Adv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fan.Designer.cs">
+      <DependentUpon>Fan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Open.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Open.Designer.cs">
+      <DependentUpon>Open.cs</DependentUpon>
+    </Compile>
+    <Compile Include="repoMemcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="repoMemcs.Designer.cs">
+      <DependentUpon>repoMemcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="repoOrds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="repoOrds.Designer.cs">
+      <DependentUpon>repoOrds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViwCart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViwCart.Designer.cs">
+      <DependentUpon>ViwCart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viw_ords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viw_ords.Designer.cs">
+      <DependentUpon>Viw_ords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thnx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thnx.Designer.cs">
+      <DependentUpon>Thnx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_log.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_log.Designer.cs">
+      <DependentUpon>Admin_log.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bok_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bok_menu.Designer.cs">
+      <DependentUpon>Bok_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cont.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cont.Designer.cs">
+      <DependentUpon>Cont.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order.Designer.cs">
+      <DependentUpon>Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeleteAndUpdateAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeleteAndUpdateAdmin.Designer.cs">
+      <DependentUpon>frmDeleteAndUpdateAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStockEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStockEdit.Designer.cs">
+      <DependentUpon>frmStockEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hor.Designer.cs">
+      <DependentUpon>Hor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mys.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mys.Designer.cs">
+      <DependentUpon>Mys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nov.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nov.Designer.cs">
+      <DependentUpon>Nov.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rom.Designer.cs">
+      <DependentUpon>Rom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_menu.Designer.cs">
+      <DependentUpon>Admin_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateUser.Designer.cs">
+      <DependentUpon>frmUpdateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeleteUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeleteUser.Designer.cs">
+      <DependentUpon>frmDeleteUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WEB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WEB.Designer.cs">
+      <DependentUpon>WEB.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Addcart.resx">
+      <DependentUpon>Addcart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bill.resx">
+      <DependentUpon>Bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BillPreviewForm.resx">
+      <DependentUpon>BillPreviewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BillReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BillReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemsReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MemsReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>OrdReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Regist.resx">
+      <DependentUpon>Regist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cont_open.resx">
+      <DependentUpon>Cont_open.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adv.resx">
+      <DependentUpon>Adv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fan.resx">
+      <DependentUpon>Fan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Open.resx">
+      <DependentUpon>Open.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="repoMemcs.resx">
+      <DependentUpon>repoMemcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="repoOrds.resx">
+      <DependentUpon>repoOrds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViwCart.resx">
+      <DependentUpon>ViwCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viw_ords.resx">
+      <DependentUpon>Viw_ords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thnx.resx">
+      <DependentUpon>Thnx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_log.resx">
+      <DependentUpon>Admin_log.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bok_menu.resx">
+      <DependentUpon>Bok_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cont.resx">
+      <DependentUpon>Cont.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order.resx">
+      <DependentUpon>Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeleteAndUpdateAdmin.resx">
+      <DependentUpon>frmDeleteAndUpdateAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStockEdit.resx">
+      <DependentUpon>frmStockEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hor.resx">
+      <DependentUpon>Hor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mys.resx">
+      <DependentUpon>Mys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nov.resx">
+      <DependentUpon>Nov.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Rom.resx">
+      <DependentUpon>Rom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_menu.resx">
+      <DependentUpon>Admin_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateUser.resx">
+      <DependentUpon>frmUpdateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeleteUser.resx">
+      <DependentUpon>frmDeleteUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WEB.resx">
+      <DependentUpon>WEB.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="oreader_dbDataSet.xsc">
+      <DependentUpon>oreader_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="oreader_dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>oreader_dbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="oreader_dbDataSet.xss">
+      <DependentUpon>oreader_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-pixabay-159872.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\efa746a6be5004b085e8db4e13c002fe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\History-Background-for-Slides-PPT-Wallpaper-Old-Open-Parchment-Paper-by-SlidesCorner.com_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fantasy-author-websites-v2-fb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_833292714_eGBeG22GdV8SqWqI3yO6lQwsko9DzZ6p.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\149662.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\your-name-kimi-no-na-wa--20918.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anime-scene-background-with-books-desk-envelopes-digital-illustration_1001131-171.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fad21490df06f8a43535e0b1a18f1d72.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HD-wallpaper-leaves-plants-nature-dark-vertical-portrait-display-thumbnail.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food-delivery-digital-art-ws82iegrpv0jd59j.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open-book-light-beam-l9hsv6a3txsf7n3p.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-exit-icon-isolated-of-flat-style-png-image_6514744.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-fresh-green-leaf-taobao-announcement-image_230678.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArthurConanDoyle_AStudyInScarlet_annual.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\premium_photo-1686729237226-0f2edb1e8970.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumb-1920-699458.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\390px-Final_Empire_10th_UK_Anniversary_Edition.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\90202302.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\painting-mountain-lake-with-mountain-background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\240_F_689803949_zKV562QxMrzWRO3wL4VTqrgwPZw6XNw9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpaper2you_100361.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dracamer99.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Death_on_the_Nile_First_Edition_Cover_1937.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flight-or-fright-9781982109004_hr.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\N2UQfZfh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\175002.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Littleprince.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A_Burning_%28Megha_Majumdar%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9781916700444_p0_v1_s600x595.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desktop-wallpaper-night-in-fantasy-village-full-and-backgrounds-archeage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HD-wallpaper-books-reading-books-background-with-books-bookshelf-thumbnail.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e6a8f072449b00b1332b9675210f208b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tumblr_f5ea4e4abe827ddeb57c2d317c5a8043_d048e4e4_1280.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\00.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\[CITYPNG.COM]HD Settings, White Line Icon Transparent Background - 800x800.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f829fcf1b453ba0905af3131281043c4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G4.1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\101-1017087_search-icon-our-vision-png-icon-transparent-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G81.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G71.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\round one.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G10.1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G10.2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2322237302397044-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-password-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lib.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G9.4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G9.3.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

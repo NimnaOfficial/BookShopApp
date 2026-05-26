@@ -1,0 +1,14 @@
+***COCSE244F-021***
+
+***Final Gui Project***
+
+__Admin Form [Form4.cs ]
+
+    Username -- KGLS17
+  
+    Passcode -- 20070612
+
+ //_THIS AMDMIN USERNAME AND PASSCODE HAS CODED ON MS VISUAL STUDIO " Form4.cs " 
+      IT HAS NOT ANY CONNECTION WITH MS SQL SERVER_//
+
+ **THANK YOU**
