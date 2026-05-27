@@ -37,7 +37,6 @@ The application is designed for:
 ### Course Information
 -
 
-- **Development Environment**: Visual Studio 2022 (Version 17.11+)
 
 ---
 
