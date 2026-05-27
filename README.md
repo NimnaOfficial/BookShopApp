@@ -34,9 +34,6 @@ The application is designed for:
 - **Customers**: Browse books, manage shopping carts, place orders, and view order history
 - **Administrators**: Manage inventory, process orders, handle user accounts, and generate reports
 
-
-
-
 ---
 
 ## ✨ Key Features
