@@ -35,7 +35,7 @@ The application is designed for:
 - **Administrators**: Manage inventory, process orders, handle user accounts, and generate reports
 
 ### Course Information
-- **Course Code**: COCSE244F-021
+-
 - **Project Type**: Final GUI Project
 - **Platform**: Windows Forms Application (.NET Framework)
 - **Development Environment**: Visual Studio 2022 (Version 17.11+)
