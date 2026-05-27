@@ -36,7 +36,6 @@ The application is designed for:
 
 ### Course Information
 -
-- **Project Type**: Final GUI Project
 - **Platform**: Windows Forms Application (.NET Framework)
 - **Development Environment**: Visual Studio 2022 (Version 17.11+)
 
