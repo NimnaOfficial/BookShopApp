@@ -35,6 +35,10 @@ The application is designed for:
 - **Administrators**: Manage inventory, process orders, handle user accounts, and generate reports
 
 
+### Course Information
+-
+- **Platform**: Windows Forms Application (.NET Framework)
+- **Development Environment**: Visual Studio 2022 (Version 17.11+)
 
 ---
 
