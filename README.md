@@ -36,7 +36,7 @@ The application is designed for:
 
 ### Course Information
 -
-- **Platform**: Windows Forms Application (.NET Framework)
+
 - **Development Environment**: Visual Studio 2022 (Version 17.11+)
 
 ---
